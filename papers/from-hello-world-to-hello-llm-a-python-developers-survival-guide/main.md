@@ -58,7 +58,7 @@ We'll walk through:
 
 The biggest shift here is the greater accessibility for anyone to build. You no longer need to train models yourself as modern large language model (LLM) APIs, embedding models, and vector databases are available with minimal setup. We view AI as not replacing your application stack, but another component to be added to existing systems that are useful for ambiguity, language, reasoning, and search. Think of an LLM like a non-deterministic but powerful external API that needs structure, validation, retries, and observability.
 
-AI collapses the gap between expertise and execution. In our hackathon, we paired technologists (who bring architecture, LLM knowledge, data systems, and engineering experience) with education experts (who bring deep context, student needs, institutional knowledge, and on-the-ground experience). 
+AI collapses the gap between expertise and execution. In our hackathon, we paired technologists (who bring architecture, LLM knowledge, data systems, and engineering experience) with education experts (who bring deep context, student needs, institutional knowledge, and on-the-ground experience).
 Together, through a modular LLM stack (prompts, tools, retrieval, embeddings, vector databases, and guardrails), we delivered working solutions in three days.
 
 :::{figure} collab_image.png
