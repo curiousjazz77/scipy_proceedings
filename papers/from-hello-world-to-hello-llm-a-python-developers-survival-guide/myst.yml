@@ -11,11 +11,13 @@ project:
   authors:
     - name: Jasmine Omeke
       email: j.omeke.consults@gmail.com
+      orcid: 0009-0008-7044-3364
       corresponding: true
       affiliations:
         - /dev/color
     - name: Audrey Webb
       email: audreyehiwebb@gmail.com
+      orcid: # TODO: add Audrey's ORCID iD once registered (https://orcid.org/register)
       affiliations:
         - /dev/color
   keywords:
@@ -27,6 +29,13 @@ project:
   # Add the abbreviations that you use in your paper here
   abbreviations:
     MyST: Markedly Structured Text
+  # Disclosure per the SciPy 2026 Gen AI Policy. A matching disclosure
+  # also appears as a "GenAI Usage Disclosure" section at the end of main.md.
+  generative_ai_disclosure: >-
+    Generative AI (Claude, Anthropic) was used as an editing aid, primarily to
+    help tighten sentence structure and shorten overly long sentences in the
+    abstract, and to check grammar and flow. All technical content, code
+    examples, patterns, and conclusions are the authors' own work.
   # It is possible to explicitly ignore the `doi-exists` check for certain citation keys
   error_rules:
     - rule: doi-exists
