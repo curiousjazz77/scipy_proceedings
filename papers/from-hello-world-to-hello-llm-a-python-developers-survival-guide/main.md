@@ -18,17 +18,17 @@ abstract: >-
   applications and explain when each pattern makes sense. These examples are
   designed to require no prior machine learning experience. Attendees will leave
   understanding how LLM systems work, what problems they solve well, and how to
-  maintain and observe what they build. We cover the modern LLM stack in Python;
-  common patterns such as prompts, function calling, retrieval-augmented
-  generation (RAG), and simple agents; and how to choose between a script, an
-  agent, and a service. We also cover how to get something working quickly
-  without sacrificing reliability or safety, practical guardrails for handling
-  errors and protecting data, and how to stand up common workflows, from
-  LLM-powered scripts to lightweight agents and Model Context Protocol-style
-  (MCP-style) services. Attendees will leave with a clear map of the LLM
-  landscape, working Python patterns they can reuse immediately, and the
-  confidence to start building LLM features without a machine learning
-  background.
+  maintain and observe what they build. We cover the modern LLM stack in Python.
+  This includes common patterns such as prompts, function calling,
+  retrieval-augmented generation (RAG), and simple agents. Additionally, we will
+  show how to choose between a script, an agent, and a service. We also cover
+  how to get something working quickly without sacrificing reliability or
+  safety. We share practical guardrails for handling errors and protecting
+  data. And we show how to stand up common workflows, from LLM-powered
+  scripts to lightweight agents and Model Context Protocol-style (MCP-style)
+  services. Attendees will leave with a clear map of the LLM landscape, working
+  Python patterns they can reuse immediately, and the confidence to start
+  building LLM features without a machine learning background.
 ---
 
 ## What We Learned Building AI Tools with Python
@@ -39,7 +39,7 @@ Like many developers entering the AI space, we had to quickly navigate a growing
 
 Here we share the lessons learned, tooling decisions, and implementation patterns that helped us move from experimentation to working applications.
 
-Rather than treating AI as magic, we'll break it down into familiar engineering concepts:
+First, let's break the component of AI usage down into familiar engineering concepts:
 
 - validation
 - retrieval
@@ -54,11 +54,12 @@ We'll walk through:
 - reusable code snippets and implementation patterns
 - understanding how and when to use these patterns in real systems
 
-## The Shift: AI as a System Component, Not Magic
+## The Shift: AI as a System Component Instead of Our Base Tool
 
 The biggest shift here is the greater accessibility for anyone to build. You no longer need to train models yourself as modern large language model (LLM) APIs, embedding models, and vector databases are available with minimal setup. We view AI as not replacing your application stack, but another component to be added to existing systems that are useful for ambiguity, language, reasoning, and search. Think of an LLM like a non-deterministic but powerful external API that needs structure, validation, retries, and observability.
 
-AI collapses the gap between expertise and execution. In our hackathon, we paired technologists (who bring architecture, LLM knowledge, data systems, and engineering experience) with education experts (who bring deep context, student needs, institutional knowledge, and on-the-ground experience). Together, through a modular LLM stack (prompts, tools, retrieval, embeddings, vector databases, and guardrails), we delivered working solutions in 3 days.
+AI collapses the gap between expertise and execution. In our hackathon, we paired technologists (who bring architecture, LLM knowledge, data systems, and engineering experience) with education experts (who bring deep context, student needs, institutional knowledge, and on-the-ground experience). 
+Together, through a modular LLM stack (prompts, tools, retrieval, embeddings, vector databases, and guardrails), we delivered working solutions in three days.
 
 :::{figure} collab_image.png
 :label: fig-collaboration
