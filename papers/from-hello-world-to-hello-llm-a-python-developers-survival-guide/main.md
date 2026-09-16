@@ -8,8 +8,27 @@ authors:
     email: jomeke@post.harvard.edu
     affiliation: Airbnb
     corresponding: true
-abstract: |
-  AI tooling is moving fast, but many Python developers are unsure where to start or how today's AI patterns fit into systems they already know how to build. This talk is a practical, hands-on overview of modern AI development patterns in Python, focused on what you need to know to go from zero to hero. We'll walk through real-world coding examples from a social good hackathon. We'll break this down into parts that show core building blocks of modern AI applications, and explain when each pattern makes sense. This example is designed in a way that doesn't require any prior machine learning experience, and attendees will leave with an understanding of how AI systems work, what problems they're good at solving, and how to maintain and observe what has been built. Topics covered include the modern AI stack in Python, common patterns such as prompts, function calling, RAG, and simple agents, when to use a script vs an agent vs a service, how to get something working quickly without sacrificing reliability or safety, practical guardrails for handling errors and protecting data, and how to stand up common AI workflows from LLM-powered scripts to lightweight agents and MCP-style services. Attendees will leave with a clear map of the AI landscape, working Python patterns they can reuse immediately, and the confidence to start building AI features without needing a machine learning background.
+abstract: >-
+  AI tooling is moving fast, but many Python developers are unsure where to start,
+  or how today's patterns fit into systems they already know how to build. This
+  talk gives a practical, hands-on overview of modern large language model (LLM)
+  development patterns in Python, focused on what you need to know to go from zero
+  to hero. We walk through real-world coding examples from a social-good
+  hackathon, broken into parts that show the core building blocks of modern LLM
+  applications and explain when each pattern makes sense. These examples are
+  designed to require no prior machine learning experience. Attendees will leave
+  understanding how LLM systems work, what problems they solve well, and how to
+  maintain and observe what they build. We cover the modern LLM stack in Python;
+  common patterns such as prompts, function calling, retrieval-augmented
+  generation (RAG), and simple agents; and how to choose between a script, an
+  agent, and a service. We also cover how to get something working quickly
+  without sacrificing reliability or safety, practical guardrails for handling
+  errors and protecting data, and how to stand up common workflows, from
+  LLM-powered scripts to lightweight agents and Model Context Protocol-style
+  (MCP-style) services. Attendees will leave with a clear map of the LLM
+  landscape, working Python patterns they can reuse immediately, and the
+  confidence to start building LLM features without a machine learning
+  background.
 ---
 
 ## What We Learned Building AI Tools with Python
@@ -41,7 +60,11 @@ The biggest shift here is the greater accessibility for anyone to build. You no 
 
 AI collapses the gap between expertise and execution. In our hackathon, we paired technologists (who bring architecture, LLM knowledge, data systems, and engineering experience) with education experts (who bring deep context, student needs, institutional knowledge, and on-the-ground experience). Together, through a modular LLM stack (prompts, tools, retrieval, embeddings, vector databases, and guardrails), we delivered working solutions in 3 days.
 
-![Collaboration during the hackathon](collab_image.png)
+:::{figure} collab_image.png
+:label: fig-collaboration
+
+Figure 1: Collaboration during the hackathon.
+:::
 
 ## The Modern AI Stack in Python
 
@@ -155,7 +178,11 @@ We extended the data dictionary into a live retrieval layer connected to institu
 
 Jasmine's hackathon project relied on retrieval to ground responses in a trusted educational context, always at the aggregate level described in Pattern 1. In production, this kind of grounding is often implemented with embeddings and a vector store; under hackathon time constraints, we instead built a simplified, database-backed version of the same idea: a keyword check followed by a direct SQL lookup. Both approaches serve the same purpose, retrieving relevant, approved context before the LLM generates an answer, and both helped guide the chatbot toward approved terminology and constrain it to known concepts. We call this out explicitly here because it's a lighter-weight stand-in for full embedding-based RAG, not a complete RAG pipeline.
 
-![RAG Pipeline Flow](core_pattern_rag_flow.png)
+:::{figure} core_pattern_rag_flow.png
+:label: fig-rag-flow
+
+Figure 2: RAG pipeline flow diagram.
+:::
 
 ```python
 # Data sources (swappable, secured)
@@ -453,3 +480,7 @@ You do not need deep ML expertise to build useful AI systems. You need:
 The core lesson from our hackathon: The path forward is straightforward. Build on solid engineering basics, add capability in layers, and use the simplest abstraction that solves the problem.
 
 In three days, we went from exploring requirements to shipping working tools because we treated AI like any other system dependency with respect for its probabilistic nature, careful validation, and thoughtful orchestration. Python developers already know how to do this. AI is just another component in your stack.
+
+## GenAI Usage Disclosure
+
+Generative AI (Claude, Anthropic) was used as an editing aid for this paper, primarily to help tighten sentence structure and shorten overly long sentences in the abstract, and to check grammar and flow throughout. All technical content, code examples, patterns, and conclusions reflect the authors' own work and hackathon experience; no generative AI was used to produce the underlying ideas, code, or results described in this paper.
