@@ -11,12 +11,14 @@ project:
   # Editor Note: author names will appear in the order listed here. Verify the order.
   authors:
     - name: Jasmine Omeke
-      email: j.omeke.consults@gmail.com (jomeke@post.harvard.edu)
+      email: j.omeke.consults@gmail.com
+      email: jomeke@post.harvard.edu
       orcid: 0009-0008-7044-3364
       corresponding: true
       affiliations: Airbnb
     - name: Audrey Webb
-      email: audreyehiwebb@gmail.com (awebb@berkeley.edu)
+      email: audreyehiwebb@gmail.com 
+      email: awebb@berkeley.edu
       orcid: 0009-0009-2257-3567
       affiliations: Autodesk
   keywords:
