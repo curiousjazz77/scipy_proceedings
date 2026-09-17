@@ -1,13 +1,5 @@
 ---
-title: "From Hello World to Hello LLM: A Python Developer's Survival Guide"
-authors:
-  - name: Audrey Webb
-    email: awebb@berkeley.edu
-    affiliation: Autodesk
-  - name: Jasmine Omeke
-    email: jomeke@post.harvard.edu
-    affiliation: Airbnb
-    corresponding: true
+title: From Hello World to Hello LLM: A Python Developer's Survival Guide  
 abstract: |
   AI tooling is moving fast, but many Python developers are unsure where to start,
   or how today's patterns fit into systems they already know how to build. This
@@ -29,8 +21,7 @@ abstract: |
   services. Attendees will leave with a clear map of the LLM landscape, working
   Python patterns they can reuse immediately, and the confidence to start
   building LLM features without a machine learning background.
----
-
+---  
 ## What We Learned Building AI Tools with Python
 
 Most Python developers already know how to build real systems, APIs, scripts, services, and pipelines. During a social impact AI hackathon, we applied those same engineering skills to rapidly build AI-powered tools that helped educational institutions become more comfortable using AI to improve student success outcomes.
