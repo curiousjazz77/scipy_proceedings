@@ -5,10 +5,10 @@ project:
   id: scipy-2026-hello-llm-survival-guide
   # Ensure your title is the same as in your `main.md`
   title: "From Hello World to Hello LLM: A Python Developer's Survival Guide"
-  # subtitle: none  
+  # subtitle: none
   # Authors should have affiliations, emails and ORCIDs if available
-  # Editor Note: only one email address will be shown per person. Select one. 
-  # Editor Note: author names will appear in the order listed here. Verify the order.   
+  # Editor Note: only one email address will be shown per person. Select one.
+  # Editor Note: author names will appear in the order listed here. Verify the order.
   authors:
     - name: Jasmine Omeke
       email: j.omeke.consults@gmail.com (jomeke@post.harvard.edu)
@@ -18,7 +18,7 @@ project:
     - name: Audrey Webb
       email: audreyehiwebb@gmail.com (awebb@berkeley.edu)
       orcid: 0009-0009-2257-3567
-      affiliations: Autodesk 
+      affiliations: Autodesk
   keywords:
     - LLM
     - Python
