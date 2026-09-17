@@ -113,7 +113,7 @@ Jasmine's team used system prompts and a data dictionary to ground the LLM in in
 
 Jasmine's hackathon project involved building a chatbot to help higher education staff understand a pivotal student success dataset. The university had an institutional research department that was overwhelmed with data requests that took days to answer. AI was an opportunity to make this self-service, but institutions were concerned about data privacy and security. To address that, the chatbot was scoped to return **aggregate data only**, with no individual student-level information exposed.
 
-Prompting became the primary way we defined system behavior, privacy, and guardrails. We created a data dictionary of approved educational terms and concepts to guide the LLM toward domain-specific language and reduce hallucinations. This was important because despite datasets having overlapping subject matter, there was nuance in how data could be used. Some tables contained PII and could not be used at all for a chatbot serving data to internal stakeholders.
+Prompting became the primary way we defined system behavior, privacy, and guardrails. We created a data dictionary of approved educational terms and concepts to guide the LLM toward domain-specific language and reduce hallucinations. This was important because despite datasets having overlapping subject matter, there was nuance in how data could be used. Some tables contained individual student data (PII) and could not be used at all for a chatbot serving data to internal stakeholders.
 
 This dictionary acted as scaffolding for the LLM:
 
