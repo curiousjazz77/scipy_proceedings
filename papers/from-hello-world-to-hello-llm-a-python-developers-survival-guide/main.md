@@ -8,7 +8,7 @@ authors:
     email: jomeke@post.harvard.edu
     affiliation: Airbnb
     corresponding: true
-abstract: >-
+abstract: |
   AI tooling is moving fast, but many Python developers are unsure where to start,
   or how today's patterns fit into systems they already know how to build. This
   talk gives a practical, hands-on overview of modern large language model (LLM)
