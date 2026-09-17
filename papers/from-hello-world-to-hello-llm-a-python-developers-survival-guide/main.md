@@ -1,5 +1,5 @@
 ---
-title: “From Hello World to Hello LLM’: ‘A Python Developer's Survival Guide”
+title: "From Hello World to Hello LLM: A Python Developer's Survival Guide"
 abstract: |
   AI tooling is moving fast, but many Python developers are unsure where to start,
   or how today's patterns fit into systems they already know how to build. This
